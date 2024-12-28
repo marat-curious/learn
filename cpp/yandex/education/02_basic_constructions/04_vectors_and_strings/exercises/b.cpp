@@ -45,8 +45,15 @@ int main() {
         }
     }
 
-    answer += result.substr(0, 2);
-    for (size_t i = 2; i != result.length(); ++i) {
+    size_t start = 1;
+    if (result.length() >= 2) {
+        answer = result.substr(0, 2);
+        start = 2;
+    } else {
+        answer = result;
+    }
+
+    for (size_t i = start; i != result.length(); ++i) {
         if (result[i] != result[i - 1]) {
             answer += result[i];
         }
