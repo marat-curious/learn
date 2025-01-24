@@ -50,3 +50,9 @@ the values of two C-style character strings ([source](./ex_3_39.cpp)).
 literals. Now define a third character array to hold the concatenation of the
 two arrays. Use `strcpy` and `strcat` to copy the two arrays into the third
 ([source](./ex_3_40.cpp)).
+
+3.41. Write a program to initialize a `vector` from an array of `int`s
+([source](./ex_3_41.cpp)).
+
+3.42. Write a program to copy a `vector` of `int`s into an array of `int`s
+([source](./ex_3_42.cpp)).
