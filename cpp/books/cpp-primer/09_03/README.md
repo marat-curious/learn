@@ -50,3 +50,22 @@ if we next wrote `vec.resize(10)`?
 
 9.30. What, if any, restrictions does using the version of `resize` that takes
 a single argument place on the element type?
+
+9.31. The program in previous chapter to remove even-valued elements and
+dublicate odd ones will not work on a `list` or `forward_list`. Why? Revise
+the program so that it works on these types as well. ([source](./ex_9_31.cpp))
+
+9.32. In the program from the previous exercize would it be legal to write the
+call to `insert` as follows? If not, why not?
+```
+iter = vi.insert(iter, *iter++);
+```
+
+9.33. In the final example in this section what would happen if we did not
+assign the result of `insert` to `begin`? Write a program that omits this
+assignment to see if your expectation was correct. ([source](./ex_9_33.cpp))
+
+9.34. Assuming `vi` is a container of `int`s that includes even and odd values,
+predict the behavior of the following loop. After you've analyzed this loop,
+write a program to test whether your expectations were correct.
+([source](./ex_9.34.cpp))
